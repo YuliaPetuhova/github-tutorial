@@ -1,1 +1,128 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap'); */
+:root {
+  --color-logo: #000000;
+  --color-logo-linknav: #2196f3;
+  --color-main-title: #ffffff;
+  --color-section-title: #212121;
+  --color-text: #757575;
+  --color-dark-bg: #2f303a;
+  --color-grey-bg: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-logo-linknav);
+}
+
+.list {
+  list-style: none;
+}
+
+.dark-bg {
+  background-color: var(--color-dark-bg);
+}
+
+.grey-bg {
+  background-color: var(--color-grey-bg);
+}
+
+.dark-bg .logo {
+  --color-logo: var(--color-main-title);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color-main-title);
+  cursor: pointer;
+}
+
+.page-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-main-title);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--color-section-title);
+}
+
+.section-subtitle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-section-title);
+}
+
+.section-team {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.section-name-team {
+  font-weight: 500;
+  color: var(--color-section-title);
+}
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-section-title);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-logo);
+}
+
+.part-logo {
+  color: var(--color-logo-linknav);
+}
+
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
