@@ -6,6 +6,7 @@
   --color-text: #757575;
   --color-dark-bg: #2f303a;
   --color-grey-bg: #f5f4fa;
+  --button-portf: #212121;
 }
 
 body {
@@ -39,6 +40,18 @@ address {
 
 .link:hover,
 .link:focus {
+  color: var(--color-logo-linknav);
+}
+
+.link-haeder{
+  color: var(--color-section-title);
+}
+
+.link-inform {
+  color: var(--color-text);
+}
+
+.current{
   color: var(--color-logo-linknav);
 }
 
@@ -103,6 +116,12 @@ address {
   color: var(--color-section-title);
 }
 
+.position {
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+}
+
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -125,4 +144,42 @@ address {
 
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* pages two */
+
+.button-portf:hover{
+  color: var(--color-main-title);
+  background-color: var(--color-logo-linknav);
+}
+
+.button-portf {  
+font-family: inherit; 
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+color: var(--button-portf);
+cursor: pointer;
+background-color: #F5F4FA;
+}
+
+.current-botton{
+  background-color: var(--color-logo-linknav);
+  color: var(--color-main-title);
+}
+
+.title-portf {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--color-section-title);
+}
+
+.name-work{
+font-size: 16px;
+line-height: 1.87;
+color: var(--color-text);
 }
