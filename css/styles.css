@@ -51,9 +51,6 @@ address {
   color: var(--color-text);
 }
 
-.current{
-  color: var(--color-logo-linknav);
-}
 
 .list {
   list-style: none;
@@ -78,6 +75,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--color-main-title);
+  background-color: var(--color-logo-linknav);
   cursor: pointer;
 }
 
@@ -131,11 +129,12 @@ text-align: center;
 }
 
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--color-logo);
+  text-decoration: none;
 }
 
 .part-logo {
@@ -163,11 +162,6 @@ text-align: center;
 color: var(--button-portf);
 cursor: pointer;
 background-color: #F5F4FA;
-}
-
-.current-botton{
-  background-color: var(--color-logo-linknav);
-  color: var(--color-main-title);
 }
 
 .title-portf {
