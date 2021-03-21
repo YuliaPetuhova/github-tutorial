@@ -18,6 +18,24 @@ body {
   color: var(--color-text);
 }
 
+/* Утилиты */
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-logo-linknav);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -33,27 +51,81 @@ address {
   overflow: hidden;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--color-logo-linknav);
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.link-haeder{
+.nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link-haeder {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--color-section-title);
 }
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link-inform {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--color-text);
 }
 
+.description {
+  display: flex;
+}
 
-.list {
-  list-style: none;
+.description .item {
+  width: 1170px;
+  margin-bottom: 0;
+  /* background-color: greenyellow; */
+}
+
+.description .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.curent {
+  color: var(--color-logo-linknav);
 }
 
 .dark-bg {
@@ -69,6 +141,10 @@ address {
 }
 
 .button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -77,19 +153,39 @@ address {
   color: var(--color-main-title);
   background-color: var(--color-logo-linknav);
   cursor: pointer;
+  text-align: center;
 }
 
 .page-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-main-title);
 }
 
+.hero {
+  min-height: 100vh;
+  padding-bottom: 94px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work {
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -98,6 +194,8 @@ address {
 }
 
 .section-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -115,9 +213,9 @@ address {
 }
 
 .position {
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 .header {
@@ -129,7 +227,12 @@ text-align: center;
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -145,35 +248,34 @@ text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 /* pages two */
 
-.button-portf:hover{
+.button-portf:hover {
   color: var(--color-main-title);
   background-color: var(--color-logo-linknav);
 }
 
-.button-portf {  
-font-family: inherit; 
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-color: var(--button-portf);
-cursor: pointer;
-background-color: #F5F4FA;
+.button-portf {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--button-portf);
+  cursor: pointer;
+  background-color: #f5f4fa;
 }
 
 .title-portf {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--color-section-title);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-section-title);
 }
 
-.name-work{
-font-size: 16px;
-line-height: 1.87;
-color: var(--color-text);
+.name-work {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--color-text);
 }
