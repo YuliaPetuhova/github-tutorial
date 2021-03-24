@@ -137,7 +137,7 @@ address {
 }
 
 .description .item {
-  width: 1170px;
+  width: 270px;
   margin-bottom: 0;
   /* background-color: greenyellow; */
 }
@@ -163,6 +163,9 @@ address {
 }
 
 .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -180,28 +183,23 @@ address {
 }
 
 .hero {
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .page-title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-main-title);
+  width: calc(100% / 12 * 7);
 }
 
 .work {
@@ -231,7 +229,7 @@ address {
 }
 
 .images-item {
-  flex-basis: calc((100% - 3 * 30) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .section-subtitle {
@@ -257,7 +255,7 @@ address {
 }
 
 .team-item {
-  flex-basis: calc((100% - 4 * 30) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 .section-team {
@@ -265,15 +263,18 @@ address {
   line-height: 1.18;
   text-align: center;
 }
+
+.our-team {
+  padding: 30px;
+}
+
 .section-name-team {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   color: var(--color-section-title);
 }
 
 .position {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -310,7 +311,7 @@ address {
 }
 
 .footer-logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .part-logo {
@@ -322,11 +323,7 @@ address {
 }
 
 .adres-item:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.address-list {
-  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 9px;
 }
 
 /* pages two */
@@ -339,11 +336,10 @@ address {
 }
 
 .card-elements {
-  border-bottom: 1px solid #eeeeee;
-  width: 370px;
+  max-width: 370px;
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 9 * 30) / 9);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .button-portf:hover {
@@ -384,6 +380,10 @@ address {
 }
 
 .card-name {
+  border-top: 0;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
