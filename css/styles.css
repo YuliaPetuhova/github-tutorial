@@ -88,24 +88,29 @@ address {
   padding-right: 15px;
 }
 
+.contacts-list {
+  display: inline-flex;
+}
+
 .contacts-link {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.contacts-list .icon-mail {
+.contacts-item .icon-mail {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.contacts-list .icon-phone {
+.contacts-item .icon-phone {
   width: 10px;
   height: 16px;
-}
-
-.contacts-link:hover .icon,
-.contacts-link:focus .icon {
-  stroke: var(--color-logo-linknav);
+  margin-right: 10px;
+  fill: currentColor;
+  text-align: center;
 }
 
 .social-icons {
@@ -154,6 +159,40 @@ address {
 .dark-bg .social-icon-link:focus {
   background-color: var(--color-logo-linknav);
 }
+
+.client-list {
+  display: inline-flex;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--color-logo-linknav);
+}
+
+.client-link:hover .icon,
+.client-link:focus .icon {
+  fill: var(--color-logo-linknav);
+}
+
+.client-list .icon {
+  fill: var(--color-icons);
+}
+
 .main-nav {
   display: flex;
   border-bottom: 1px solid #ececec;
@@ -253,6 +292,10 @@ address {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/titlefon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-title {
