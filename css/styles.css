@@ -22,6 +22,7 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -63,8 +64,9 @@ address {
 /* Утилиты */
 
 .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-decoration: none;
   color: inherit;
 }
@@ -198,10 +200,12 @@ address {
   border-bottom: 1px solid #ececec;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -227,9 +231,9 @@ address {
 }
 
 .link-inform {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   color: var(--color-text);
 }
@@ -299,9 +303,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/titlefon.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .page-title {
@@ -445,15 +446,11 @@ address {
   color: var(--color-section-title);
 }
 
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header .logo {
   margin-right: 93px;
 }
 
 .logo {
-  display: block;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -468,6 +465,7 @@ address {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -476,6 +474,7 @@ address {
 }
 
 .link-footer {
+  padding: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -489,6 +488,7 @@ address {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social {
