@@ -74,6 +74,8 @@ address {
 .link:hover,
 .link:focus {
   color: var(--color-logo-linknav);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -142,11 +144,15 @@ address {
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--color-logo-linknav);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover .icon,
 .social-icon-link:focus .icon {
   fill: var(--color-main-title);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark-bg .social-icon-link {
@@ -160,6 +166,8 @@ address {
 .dark-bg .social-icon-link:hover,
 .dark-bg .social-icon-link:focus {
   background-color: var(--color-logo-linknav);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list {
@@ -184,11 +192,14 @@ address {
 .client-link:hover,
 .client-link:focus {
   border-color: var(--color-logo-linknav);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover .icon,
 .client-link:focus .icon {
-  fill: var(--color-logo-linknav);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list .icon {
@@ -201,6 +212,10 @@ address {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+}
+
+.border-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav {
@@ -568,6 +583,8 @@ address {
 
 .card-elements:hover .overlay {
   transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-elements:hover,
@@ -576,6 +593,8 @@ address {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portf:hover,
@@ -584,6 +603,8 @@ address {
   background-color: var(--color-logo-linknav);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portf {
@@ -647,8 +668,9 @@ address {
 }
 
 .backdrop.is-hidden {
-  /* opacity: 0; */
+  opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -667,13 +689,12 @@ address {
 }
 
 .modal-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   width: 30px;
   height: 30px;
-
-  background-position: right top;
 
   background-color: var(--color-main-title);
   border: 1px solid rgba(0, 0, 0, 0.1);
