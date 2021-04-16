@@ -512,6 +512,14 @@ address {
   padding-bottom: 60px;
 }
 
+.calc-position {
+  flex-basis: calc((50% - 45px) / 2);
+}
+
+.calc-position:last-child {
+  flex-basis: calc(50% - 15px);
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -552,6 +560,10 @@ address {
   color: var(--color-main-title);
 }
 
+.form {
+  display: inline-flex;
+}
+
 .email {
   width: 358px;
   height: 50px;
@@ -559,40 +571,35 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--color-dark-bg);
+  background-color: transparent;
+  color: var(--color-main-title);
 }
-
-/* .email::placeholder {
-  font-size: 16px;
-  line-height: 1.25px;
-
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-} */
 
 .tagline {
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.slogan {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
   color: var(--color-main-title);
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
+.form-icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-main-title);
+}
 /* pages two */
 
 .card {

@@ -310,7 +310,7 @@
 
       <footer class="footer dark-bg">
           <div class="container">
-              <section class="footer-map">
+              <section class="footer-map calc-position">
                 <a class="logo footer-logo" href="./index.html"><span class="part-logo">Web</span>Studio</a>
                 <address>
                     <ul class="list" >
@@ -320,7 +320,7 @@
                     </ul>                 
                 </address>
             </section>
-            <section class="footer-social" >               
+            <section class="footer-social calc-position" >               
                 <h2 class="join">присоединяйтесь</h2>  
                     <ul class="list social-icons">
                         <li class="social-icons-item">
@@ -353,11 +353,15 @@
                         </li>
                     </ul>
             </section>
-          <section class="form">
+          <section class="calc-position">
               <h2 class="join">Подпишитесь на рассылку</h2>
-              <form>                       
+              <form class="form">                       
                     <input class="email" type="email" name="E-mail" autocomplete="on" placeholder="E-mail">
-                    <button class="tagline" type="submit"><span class="slogan">Подписаться</span></button>
+                    <button class="tagline" type="submit">Подписаться
+                        <svg class="form-icon">
+                        <use href="./images/icons/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
               </form>
           </section>
         </div>
