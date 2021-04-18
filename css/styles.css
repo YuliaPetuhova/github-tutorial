@@ -729,7 +729,7 @@ address {
 
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -747,7 +747,7 @@ address {
 
   min-width: 528px;
   min-height: 581px;
-  padding-top: 8px;
+  padding: 40px;
 
   background-color: var(--color-main-title);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -758,6 +758,15 @@ address {
   width: 18px;
   height: 18px;
   fill: var(--color-logo);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover .icon-modal,
+.modal-button:focus .icon-modal {
+  fill: var(--color-logo-linknav);
 }
 
 .modal-button {
@@ -771,14 +780,155 @@ address {
   background-color: var(--color-main-title);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  outline: currentColor;
 }
 
 .modal-text {
   display: block;
-  padding-top: 40px;
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: var(--color-section-title);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.text-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.format {
+  padding-left: 42px;
+  outline: currentColor;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-form {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--color-section-title);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.format:hover + .icon-form,
+.format:focus + .icon-form {
+  fill: var(--color-logo-linknav);
+}
+
+.format:hover,
+.format:focus {
+  border-color: var(--color-logo-linknav);
+}
+
+.textarea {
+  resize: none;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: currentColor;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border-color: var(--color-logo-linknav);
+}
+
+.textarea::placeholder {
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.link-contract {
+  color: var(--color-logo-linknav);
+}
+
+.checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.cheсk {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--color-section-title);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .cheсk {
+  border-color: var(--color-logo-linknav);
+  background-color: var(--color-logo-linknav);
+  background-image: url(../images/icons/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.send {
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.send-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color-main-title);
 }
