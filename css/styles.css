@@ -772,3 +772,13 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
+.modal-text {
+  display: block;
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--color-section-title);
+}
