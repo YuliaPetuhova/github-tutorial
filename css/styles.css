@@ -64,6 +64,7 @@ address {
 /* Утилиты */
 
 .link {
+  display: flex;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -92,10 +93,6 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.contacts-list {
-  display: inline-flex;
 }
 
 .contacts-link {
@@ -255,10 +252,6 @@ address {
 }
 
 .link-inform {
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   color: var(--color-text);
 }
 
