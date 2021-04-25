@@ -1,0 +1,24 @@
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+
+@import './components/button';
+@import './components/site-nav';
+@import './components/social-list';
+@import './components/logo';
+@import './components/form';
+@import './components/modal';
+@import './components/modal-form';
+
+@import './layouts/nav';
+@import './layouts/auth-nav';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/description';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/client';
+@import './layouts/footer';
+@import './layouts/component';
+@import './layouts/card';

@@ -1,0 +1,33 @@
+.work {
+  padding-top: 0;
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.image__item {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.image__text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  color: var(--color-main-title);
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}

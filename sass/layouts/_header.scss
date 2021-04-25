@@ -1,0 +1,15 @@
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-section-title);
+}
+
+.header__container {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}

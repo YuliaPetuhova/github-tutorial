@@ -1,0 +1,47 @@
+.description {
+  display: flex;
+}
+
+.description__item {
+  width: 270px;
+  margin-bottom: 0;
+}
+
+.description__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.description__item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--color-grey-bg);
+  border-radius: 4px;
+}
+
+.description__item:nth-child(1):before {
+  background-image: url(../images/cards/antenna.svg);
+}
+
+.description__item:nth-child(2):before {
+  background-image: url(../images/cards/clock.svg);
+}
+
+.description__item:nth-child(3):before {
+  background-image: url(../images/cards/diagram.svg);
+}
+
+.description__item:nth-child(4):before {
+  background-image: url(../images/cards/astronaut.svg);
+}
+
+.description__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-section-title);
+}
