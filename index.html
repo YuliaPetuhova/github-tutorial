@@ -44,7 +44,7 @@
 
      <main>
      
-     <section class="hero dark-bg">  
+     <section class="hero section--dark-bg">  
          <div class="container">    
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero__button" data-modal-open type="button">Заказать услугу</button> 
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <section class="grey-bg section">
+    <section class="section--grey-bg section">
         <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="list team" >
@@ -308,10 +308,10 @@
       </section>
     </main>  
 
-      <footer class="footer dark-bg">
+      <footer class="footer section--dark-bg">
           <div class="container footer__container">
               <section class="footer-map calc-position">
-                <a class="logo footer__logo" href="./index.html"><span class="header__part-logo">Web</span>Studio</a>
+                <a class="logo footer__logo logo--dark-bg" href="./index.html"><span class="header__part-logo">Web</span>Studio</a>
                 <address>
                     <ul class="list">
                         <li class="footer__item"><a class="link footer__link" href="https://goo.gl/maps/5RGDy6cNAoZ9L324A">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -324,29 +324,29 @@
                 <h2 class="footer__text">присоединяйтесь</h2>  
                     <ul class="list social-list">
                         <li class="social-list_item">
-                            <a href="" class="social-list__link dark-bg__social-list__link" target="_ blank" rel="noopener noreferrer ">
-                                <svg class="social-list__icon dark-bg__social-list__icon">
+                            <a href="" class="social-list__link link--dark-bg" target="_ blank" rel="noopener noreferrer ">
+                                <svg class="social-list__icon icon--dark-bg ">
                                     <use href="./images/icons/spriteopt.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list_item">
-                            <a href="" class="social-list__link dark-bg__social-list__link" target="_ blank" rel="noopener noreferrer ">
-                                <svg class="social-list__icon dark-bg__social-list__icon">
+                            <a href="" class="social-list__link link--dark-bg" target="_ blank" rel="noopener noreferrer ">
+                                <svg class="social-list__icon icon--dark-bg ">
                                     <use href="./images/icons/spriteopt.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list_item">
-                            <a href="" class="social-list__link dark-bg__social-list__link" target="_ blank" rel="noopener noreferrer ">
-                                <svg class="social-list__icon dark-bg__social-list__icon">
+                            <a href="" class="social-list__link link--dark-bg" target="_ blank" rel="noopener noreferrer ">
+                                <svg class="social-list__icon icon--dark-bg ">
                                     <use href="./images/icons/spriteopt.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-list_item">
-                            <a href="" class="social-list__link dark-bg__social-list__link" target="_ blank" rel="noopener noreferrer ">
-                                <svg class="social-list__icon dark-bg__social-list__icon">
+                            <a href="" class="social-list__link link--dark-bg " target="_ blank" rel="noopener noreferrer ">
+                                <svg class="social-list__icon icon--dark-bg ">
                                     <use href="./images/icons/spriteopt.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -376,35 +376,35 @@
               </button>
             <form class="modal-form">
                 <div class="modal-container">
-                    <label  class="text-label" for="user-name">Имя</label>                  
-                        <input class="format" type="text" name="name" id="user-name" placeholder=" ">
-                        <svg class="icon-form">
+                    <label  class="modal-form__text" for="user-name">Имя</label>                  
+                        <input class="modal-form__input" type="text" name="name" id="user-name" placeholder=" ">
+                        <svg class="modal-form__icon">
                             <use href="./images/icons/sprite.svg#icon-person-form"></use>
                         </svg>
                 </div>
                 <div class="modal-container">
-                    <label for="text-label" user-phone">Телефон</label>                  
-                        <input class="format" type="tel" name="phone" id="user-phone" placeholder=" ">
-                        <svg class="icon-form">
+                    <label class="modal-form__text" for="user-phone" user-phone">Телефон</label>                  
+                        <input class="modal-form__input" type="tel" name="phone" id="user-phone" placeholder=" ">
+                        <svg class="modal-form__icon">
                             <use href="./images/icons/sprite.svg#icon-phone-form"></use>
                         </svg>
                  </div>
                 <div class="modal-container">
-                <label class="text-label" for="user-email">Почта</label>                 
-                    <input class="format" type="email" name="email" id="user-email" placeholder=" ">
-                    <svg class="icon-form">
+                <label class="modal-form__text" for="user-email">Почта</label>                 
+                    <input class="modal-form__input" type="email" name="email" id="user-email" placeholder=" ">
+                    <svg class="modal-form__icon">
                         <use href="./images/icons/sprite.svg#icon-email-form"></use>
                     </svg>
                 </div>
               
-                <label class="text-label" for="user-comment">Комментарий</label>                  
-                  <textarea class="textarea" name="comment" rows="8" id="user-comment" placeholder="Введите текст"></textarea>               
-                <label class="contract">                    
-                    <input class="checkbox" type="checkbox" name="contract" >
-                    <span class="cheсk"></span>
-                        Соглашаюсь с рассылкой и принимаю<a class="link-contract" href="">Условия договора</a> 
+                <label class="modal-form__text" for="user-comment">Комментарий</label>                  
+                  <textarea class="modal-form__textarea" name="comment" rows="8" id="user-comment" placeholder="Введите текст"></textarea>               
+                <label class="modal-form__contract">                    
+                    <input class="modal-form__checkbox" type="checkbox" name="contract" >
+                    <span class="modal-form__cheсk"></span>
+                        Соглашаюсь с рассылкой и принимаю<a class="modal-form__link" href="">Условия договора</a> 
                 </label>
-                <button class="send" type="submit"><span class="send-text">Отправить</span></button>
+                <button class="modal-form__button" type="submit"><span class="modal-form__text">Отправить</span></button>
             </form>
           </div>   
           
