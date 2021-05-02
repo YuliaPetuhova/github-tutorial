@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  max-width: 1200px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -21,3 +21,11 @@
   color: var(--color-main-title);
   width: calc(100% / 12 * 7);
 }
+
+// @media screen and (min-width: 480) {
+//   .hero__title {
+//     width: calc(100% / 7 * 4);
+// }
+
+//   }
+// }

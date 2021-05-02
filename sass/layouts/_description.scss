@@ -1,14 +1,24 @@
 .description {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .description__item {
   width: 270px;
   margin-bottom: 0;
-}
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 1 * 30px) / 1);
 
-.description__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .description__item::before {
@@ -44,4 +54,8 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-section-title);
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    text-align: center;
+  }
 }
