@@ -40,8 +40,23 @@
                     </a>
                 </li>
             </ul>
+            <button class="mobile-menu-btn">
+                <svg class="mobile-menu-icon"> 
+                    <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+                    <use class="icon-close" href="./images/icons/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
      </header>
+
+     <div class="mobile-menu">
+        <ul class="list site-nav">
+            <li class="site-nav__item"><a class="link site-nav__link curent" href="">Студия</a></li>
+            <li class="site-nav__item"><a class="link site-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
+        </ul>
+
+     </div>
 
      <main>
      
@@ -311,7 +326,7 @@
 
       <footer class="footer section--dark-bg">
           <div class="container footer__container">
-              <section class="footer-map calc-position">
+              <section class="calc-position">
                 <a class="logo footer__logo logo--dark-bg" href="./index.html"><span class="header__part-logo">Web</span>Studio</a>
                 <address>
                     <ul class="list">
@@ -321,7 +336,7 @@
                     </ul>                 
                 </address>
             </section>
-            <section class="footer-social calc-position" >               
+            <section class="calc-position" >               
                 <h2 class="footer__text">присоединяйтесь</h2>  
                     <ul class="list social-list">
                         <li class="social-list_item">
@@ -354,17 +369,17 @@
                         </li>
                     </ul>
             </section>
-          <section class="calc-position">
-              <h2 class="footer__text">Подпишитесь на рассылку</h2>
-              <form class="form">                       
-                    <input class="form__input" type="email" name="E-mail" autocomplete="on" placeholder="E-mail">
-                    <button class="form__button" type="submit">Подписаться
-                        <svg class="form__icon">
-                        <use href="./images/icons/sprite.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
-              </form>
-          </section>
+            <section class="calc-position">
+                <h2 class="footer__text">Подпишитесь на рассылку</h2>
+                <form class="form">                       
+                        <input class="form__input" type="email" name="E-mail" autocomplete="on" placeholder="E-mail">
+                        <button class="form__button" type="submit">Подписаться
+                            <svg class="form__icon">
+                            <use href="./images/icons/sprite.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                </form>
+            </section>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>

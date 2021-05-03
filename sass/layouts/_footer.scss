@@ -3,8 +3,15 @@
   padding-bottom: 60px;
 }
 
-.footer-map {
-  margin-right: 70px;
+.footer__container {
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .calc-position {
@@ -16,7 +23,11 @@
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__link {
@@ -24,11 +35,8 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social {
-  display: inline-block;
-}
-
 .footer__text {
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -48,14 +56,4 @@
 
 .icon--dark-bg {
   fill: var(--color-main-title);
-}
-
-.footer__container {
-  display: block;
-  text-align: center;
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
 }
