@@ -159,11 +159,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   color: var(--color-main-title);
   background-color: #2196f3;
@@ -304,9 +305,11 @@ address {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form {
-    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -314,12 +317,25 @@ address {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
-  padding-left: 16px;
+  padding: 0px 0px 0px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   color: var(--color-main-title);
+}
+
+@media screen and (min-width: 768px) {
+  .form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__input {
+    margin-right: 12px;
+    width: 100%;
+  }
 }
 
 .form__icon {
@@ -614,25 +630,45 @@ address {
 
 .hero {
   max-width: 1200px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/titlefon.jpg);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
+  width: calc(100% / 4 * 3);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-main-title);
-  width: calc(100% / 12 * 7);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: calc(100% / 6 * 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: calc(100% / 12 * 7);
+  }
 }
 
 .description {
@@ -862,17 +898,35 @@ address {
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 
-.calc-position {
-  flex-basis: calc((50% - 45px) / 2);
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: space-between;
+    text-align: start;
+  }
 }
 
-.calc-position:last-child {
-  flex-basis: calc(50% - 15px);
+@media screen and (min-width: 768px) {
+  .calc-position {
+    flex-basis: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .calc-position {
+    flex-basis: calc((50% - 45px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .calc-position:last-child {
+    flex-basis: calc(50% - 15px);
+  }
 }
 
 .footer__item:not(:last-child) {
@@ -914,13 +968,26 @@ address {
 
 .component {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding-bottom: 34px;
+}
+
+@media screen and (min-width: 768px) {
+  .component {
+    justify-content: center;
+  }
 }
 
 .component__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .component__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .card {
@@ -931,11 +998,9 @@ address {
 }
 
 .card__element {
-  max-width: 370px;
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 1 * 30px) / 1);
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -944,6 +1009,18 @@ address {
 .card__element:hover, .card__element:focus {
   background-color: var(--color-main-title);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .card__element {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__element {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .box {

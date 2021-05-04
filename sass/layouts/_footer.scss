@@ -9,17 +9,30 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    text-align: start;
   }
 }
 
 .calc-position {
-  flex-basis: calc((50% - 45px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((50% - 45px) / 2);
+  }
 }
 
 .calc-position:last-child {
-  flex-basis: calc(50% - 15px);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(50% - 15px);
+  }
 }
 
 .footer__item:not(:last-child) {

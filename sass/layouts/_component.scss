@@ -1,10 +1,21 @@
 .component {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding-bottom: 34px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .component__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .component__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
