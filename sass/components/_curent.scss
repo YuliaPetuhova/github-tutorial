@@ -1,0 +1,15 @@
+.curent {
+  color: var(--color-logo-linknav);
+}
+
+@media screen and (min-width: 768px) {
+  .curent::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    transform: translateY(32px);
+  }
+}

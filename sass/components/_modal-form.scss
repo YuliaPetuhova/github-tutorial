@@ -8,13 +8,12 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--color-text);
 }
 
 .modal-form__input {
   padding-left: 42px;
   outline: currentColor;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -79,7 +78,13 @@
 .modal-form__contract {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-form__checkbox {
@@ -112,15 +117,4 @@
 
 .modal-form__link {
   color: var(--color-logo-linknav);
-}
-
-.modal-form__text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--color-main-title);
 }
